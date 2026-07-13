@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../src/maths.ts", "../src/main.ts"],
+  "sourcesContent": ["export function add(a: number, b: number): number {\n  return a + b;\n}\n\nexport function multiply(a: number, b: number): number {\n  return a * b;\n}\n", "import { add, multiply } from \"./maths\";\n\nconst heading = document.querySelector<HTMLHeadingElement>(\"#result\");\n\nif (!heading) {\n  throw new Error(\"Result element was not found\");\n}\n\nconst addition = add(10, 5);\nconst multiplication = multiply(10, 5);\n\nheading.textContent = `\n  10 + 5 = ${addition}\n  | 10 \u00D7 5 = ${multiplication}\n`;\n"],
+  "mappings": ";;AAAO,WAAS,IAAI,GAAW,GAAmB;AAChD,WAAO,IAAI;AAAA,EACb;AAEO,WAAS,SAAS,GAAW,GAAmB;AACrD,WAAO,IAAI;AAAA,EACb;;;ACJA,MAAM,UAAU,SAAS,cAAkC,SAAS;AAEpE,MAAI,CAAC,SAAS;AACZ,UAAM,IAAI,MAAM,8BAA8B;AAAA,EAChD;AAEA,MAAM,WAAW,IAAI,IAAI,CAAC;AAC1B,MAAM,iBAAiB,SAAS,IAAI,CAAC;AAErC,UAAQ,cAAc;AAAA,aACT,QAAQ;AAAA,kBACN,cAAc;AAAA;",
+  "names": []
+}

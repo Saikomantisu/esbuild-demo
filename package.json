@@ -1,0 +1,24 @@
+{
+  "name": "esbuild-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "esbuild src/main.ts --bundle --outfile=dist/app.js --sourcemap --watch",
+    "build": "esbuild src/main.ts --bundle --outfile=dist/app.js --minify"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devEngines": {
+    "packageManager": {
+      "name": "pnpm",
+      "version": "^11.12.0",
+      "onFail": "download"
+    }
+  },
+  "type": "module",
+  "devDependencies": {
+    "esbuild": "^0.28.1"
+  }
+}
